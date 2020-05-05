@@ -1,0 +1,383 @@
+/* all height && color */
+
+#collectionSummary {
+    height: 600px;
+    // background: url(/resources/images/collection.jpg) no-repeat center top;
+    background: url(/resources/images/homeBG.png) no-repeat center right;
+    background-size: 50%;
+}
+
+#section1 {
+    height: 600px;
+    // border: 1px solid red;
+}
+
+#section2 {
+    height: 600px;
+    // border: 1px solid red;
+}
+
+#section3 {
+    height: 600px;
+    // border: 1px solid red;
+}
+
+#section4 {
+    height: 600px;
+    // border: 1px solid red;
+}
+
+#section5 {
+    height: 700px;
+    // border: 1px solid red;
+}
+
+#footer {
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+.textBox i {
+    padding-left: 10px;
+    color: #bdbdbd;
+}
+
+#section1.visible,
+#section2.visible,
+#section3.visible,
+#section4.visible,
+#section5.visible {
+
+    .textBox,
+    .firstSquare,
+    .secondSquare,
+    .imgBox,
+    li {
+        transform: none;
+        opacity: 1;
+    }
+
+}
+
+// .section1.show,
+// .section3.show {
+
+//     .textBox,
+//     .firstSquare,
+//     .secondSquare {
+//         transform: none;
+//         opacity: 1;
+//     }
+// }
+
+// .section2.show,
+// .section4.show {
+
+//     .textBox,
+//     .imgBox {
+//         transform: none;
+//         opacity: 1;
+//     }
+// }
+
+// .section5.show {
+//     .textBox {
+//         transform: none;
+//         opacity: 1;
+//     }
+
+//     .imgBox {
+//         li {
+//             transform: none;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+$textColor: #000;
+
+// collectionSummary
+.collectionSummary {
+    padding: 100px 0;
+    color: $textColor;
+    margin-bottom: 80px;
+
+    h1 {
+        padding-top: 100px;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 160px;
+            background-color: #000;
+            top: 110px;
+            left: -20px;
+        }
+    }
+
+    p {
+        padding-top: 20px;
+        font-size: 23px;
+        font-weight: 300;
+        padding-bottom: 30px;
+    }
+
+    // .view{
+    //     font-size: 16px;
+    //     display: inline-block;
+    //     margin-top: 50px;
+    //     border: 1px solid #999;
+    //     background-color: #fff; 
+    //     padding: 12px 42px;
+    //     transition: all .3s ease;
+    //     border-radius: 25px;
+    //     &:hover{
+    //         background-color: #000;
+    //         color: #fff;
+    //     }
+    // }
+}
+
+.section1 {
+    .textBox {
+        margin-top: 200px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        float: left;
+        color: $textColor;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(-30%, 0);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: $textColor;
+        }
+    }
+
+    .firstSquare {
+        // border: 1px solid red;
+        float: right;
+        margin-top: 100px;
+        margin-bottom: -100px;
+        background-color: #555;
+        width: 500px;
+        height: 500px;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(30%, 0);
+        transition-delay: .3s;
+    }
+
+    .secondSquare {
+        background: url(/resources/images/momento1.jpeg);
+        // background: url(/resources/images/dVivo-removebg-preview.png);
+        border-left: 1px solid #ccc;
+        width: 500px;
+        height: 500px;
+        // border: 1px solid pink;
+        float: right;
+        margin-right: -400px;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(30%, 0);
+        transition-delay: .3s;
+    }
+}
+
+
+.section2 {
+    .textBox {
+        margin-top: 200px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        float: right;
+        color: $textColor;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(0, 30%);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: $textColor;
+        }
+    }
+
+    .imgBox {
+        float: left;
+        width: 500px;
+        height: 500px;
+        border-top: 1px solid #999;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(0, -30%);
+    }
+}
+
+.section3 {
+    .textBox {
+        margin-top: 200px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        float: left;
+        color: $textColor;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(30%, 0);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: $textColor;
+        }
+    }
+
+    .firstSquare {
+        // border: 1px solid red;
+        float: right;
+        margin-top: 100px;
+        margin-bottom: -100px;
+        background-color: #555;
+        width: 500px;
+        height: 500px;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(-30%, 0);
+    }
+
+    .secondSquare {
+        background: url(/resources/images/momento1.jpeg);
+        width: 500px;
+        height: 500px;
+        border-left: 1px solid #999;
+        float: right;
+        margin-right: -400px;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(-30%, 0);
+    }
+}
+
+.section4 {
+    .textBox {
+        margin-top: 200px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        float: right;
+        color: $textColor;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(0, -30%);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: $textColor;
+        }
+    }
+
+    .imgBox {
+        float: left;
+        width: 500px;
+        height: 500px;
+        border-top: 1px solid #999;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(0, 30%);
+    }
+}
+
+.section5 {
+    .textBox {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999;
+        color: $textColor;
+        transition: all .8s ease-in-out;
+        opacity: 0;
+        transform: translate(0, 50%);
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            color: $textColor;
+        }
+    }
+
+    .imgBox {
+        // border: 1px solid red;
+        float: right;
+
+        ul {
+            padding-top: 50px;
+
+            li {
+                float: left;
+                width: 30%;
+                margin-right: 5%;
+                transition: all .8s ease-in-out;
+                opacity: 0;
+                transform: translate(0, -50%);
+
+                &:nth-child(2) {
+                    transition-delay: .3s;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 0;
+                    transition-delay: .6s;
+                }
+            }
+
+        }
+    }
+}

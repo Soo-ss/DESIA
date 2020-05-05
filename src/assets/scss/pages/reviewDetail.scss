@@ -1,0 +1,132 @@
+#reviewDetail {
+    padding: 100px 0;
+    height: 780px;
+}
+
+.reviewleft {
+    color: #000;
+    float: left;
+    width: 50%;
+    // ==================
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+
+    img {
+        // width: 500px;
+        // height: 500px;
+    }
+
+}
+
+//- font weight, box-shadow
+.reviewRight {
+    color: #000;
+    float: right;
+    width: 50%;
+    position: relative;
+
+    // &:after {
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: -40px;
+    //     width: 2px;
+    //     height: 500px;
+    //     background-color: #ccc;
+    // }
+    i {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .creatorName {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .reviewTitle {
+        font-weight: 500;
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+
+    .reviewDesc {
+        font-size: 20px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .bottom {
+        padding-left: 20px;
+
+        .viewTitle {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .reviewViews {
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        p {
+            color: #999;
+            font-weight: 400;
+        }
+    }
+
+
+    .doubleLineButton {
+        margin-top: 70px;
+        background: #00122f;
+        color: #fff;
+        border: none;
+        position: relative;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 2em;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+
+        &:hover {
+            background: #fff;
+            color: #00122f;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: #00122f;
+            transition: 400ms ease all;
+        }
+
+        &:after {
+            right: inherit;
+            top: inherit;
+            left: 0;
+            bottom: 0;
+        }
+
+        &:hover:before,
+        &:hover:after {
+            width: 100%;
+            transition: .8s ease all;
+        }
+    }
+}

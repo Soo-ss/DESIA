@@ -1,0 +1,26 @@
+
+extends layouts/main
+
+block content
+    #reviewDetail
+        .container
+            .reviewleft
+                img(src=review.fileUrl)
+                
+            .reviewRight
+                i(class="fa fa-user-circle-o" aria-hidden="true")
+                if !review.creator.name
+                    a.creatorName=review.creator.email
+                else
+                    a.creatorName=review.creator.name
+
+                h2.reviewTitle=review.title
+                .reviewDesc=review.description
+                    //- textarea(name="description" id="summernote" class="reviewDesc")=review.description
+                .bottom
+                    a.viewTitle 조회수
+                    a.reviewViews=review.views
+                    p=moment(review.createdAt).format("YYYY-MM-DD")
+                if loggedUser && review.creator.id === loggedUser.id
+                    a(href=routes.editReview(review.id)) 리뷰 수정하기
+                        //- button.doubleLineButton 리뷰 수정하기

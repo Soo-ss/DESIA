@@ -1,0 +1,97 @@
+//- extends layouts/main
+
+//- block content
+//-     .container
+//-         .reservationSection
+//-             h1 예약
+//-             form(action=routes.reservation, method="post")
+//-                 dl
+//-                     dt 전화번호
+//-                     dd
+//-                         input(type="text" name="phone" placeholder="전화번호" required = true)
+//-                 dl
+//-                     dt 성함
+//-                     dd
+//-                         input(type="text" name="myName" placeholder="성함" required = true)
+//-                 dl
+//-                     dt 예식일
+//-                     dd
+//-                         input(type="date", name="weddingDate", required = true)
+//-                 dl
+//-                     dt 예약 날짜
+//-                     dd
+//-                         input(type="datetime-local", name="reservationDate", required = true)
+//-                 dl
+//-                     dt
+//-                     dd
+//-                         input.completeBtn(type="submit", value="예약하기")
+//-             h2 주의사항
+//-             p ~~~~~~~~~~~~~~~~~~~~~
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading Reservation
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='categorypage.html') shop
+                                li contact
+            span.year TRENDS FOR 2020
+        // Contact Section of the page
+        section.contact-sec
+            .map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.280574870585!2d128.67509821552204!3d35.2243849624974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568cce63a6cb2e7%3A0xe1bb28f9bf7a8776!2z6rK97IOB64Ko64-EIOywveybkOyLnCDshLHsgrDqtawg7KSR7JWZ64-ZIDY3LTEy!5e0!3m2!1sko!2skr!4v1587348283496!5m2!1sko!2skr" width="100%" height="800px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+            .text-holder
+                .txt-frame
+                    .holder
+                        .contact-detail
+                            h3 contact detail
+                            ul.list-unstyled.contact-info
+                                li
+                                    i.icon.icon-location
+                                    address 창원시 성산구 중앙동 67-12
+                                li
+                                    i.icon.icon-email
+                                    a.txt(href='#') idontknow@youremail.com
+                                li
+                                    i.icon.icon-phone
+                                    a.txt(href='#') 055-282-3173
+                                li
+                                    i.icon.icon-printer
+                                    a.txt(href='#') (00)-213 1879017 fax
+                        .about-detail
+                            h3 about us
+                            p
+                                | Pharetra, erat sed fermentum 
+                                br
+                                | feugiat, velit mauris egestas 
+                                br
+                                | quam mauris egestas quam.
+                    .holder
+                        h3 LEAVE A MESSGE
+                        // main-form of the page
+                        form.contact-form(action=routes.reservation, method="post")
+                            fieldset
+                                .form-group
+                                    .col
+                                        input.form-control(type="text" name="phone" placeholder="전화번호" required = true)
+                                    .col
+                                        input.form-control(type="text" name="myName" placeholder="성함" required = true)
+                                .form-group
+                                    input.form-control(type="date", name="weddingDate", required = true)
+                                .form-group
+                                    input.form-control(type="datetime-local", name="reservationDate", required = true)
+                                //- .form-group
+                                //-     textarea.form-control(placeholder='Your message')
+                                button.btn-primary.btn-submit(type='submit') 예약하기

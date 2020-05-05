@@ -1,0 +1,120 @@
+extends layouts/main
+include mixins/myReservationBlock
+
+block content
+    #userDesc
+        .container
+            .userDesc
+                h1 안녕하세요
+                if !user.name
+                    h2 네이버 이용자
+                    p.profileName=user.email
+                        | 님!
+                else
+                    p.profileName=user.name
+                        | 님!
+                em 데시아에 오신 것을 환영합니다!
+                h2 내 예약 목록
+                table.content-table
+                    thead
+                        tr
+                            th 전화번호
+                            th 성함
+                            th 예식일
+                            th 예약 날짜
+                    tbody
+                        each item in myReservations
+                            +myReservationBlock({
+                                phone: item.phone,
+                                myName: item.myName,
+                                weddingDate: item.weddingDate,
+                                reservationDate: item.reservationDate
+                            })
+
+extends layouts/main
+include mixins/myReservationBlock
+
+block content
+    // contain main informative part of the site
+    main#main(role='main')
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-2 shopping carT
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') Shop
+                                li Contact
+            span.year TRENDS FOR 2020
+        // shoping-cat-detail of the page
+        section.shoping-cat-detail
+            .container
+                .row.wow.fadeInUp(data-wow-delay='0.4s')
+                    .col-xs-12.col-sm-2
+                        span.title item
+                    .col-xs-12.col-sm-3
+                        span.title dEtail
+                    .col-xs-12.col-sm-2
+                        span.title price
+                    .col-xs-12.col-sm-3
+                        span.title quantily
+                    .col-xs-12.col-sm-2
+                        span.title total
+                hr
+                .row.wow.fadeInUp(data-wow-delay='0.4s')
+                    .detail-holder
+                        .col-xs-12.col-sm-2
+                            .img-holder
+                                img(src='http://placehold.it/165x150', alt='image descripton')
+                        .col-xs-12.col-sm-3
+                            span.txt Kenneth Jay Lane
+                        .col-xs-12.col-sm-2
+                            span.txt $230
+                        .col-xs-12.col-sm-3
+                            span.qynt 01
+                        .col-xs-12.col-sm-2
+                            span.txt $230
+                hr
+                .row.wow.fadeInUp(data-wow-delay='0.4s')
+                    .detail-holder
+                        .col-xs-12.col-sm-2
+                            .img-holder
+                                img(src='http://placehold.it/165x150', alt='image descripton')
+                        .col-xs-12.col-sm-3
+                            span.txt Lavin lady
+                        .col-xs-12.col-sm-2
+                            span.txt $173
+                        .col-xs-12.col-sm-3
+                            span.qynt 01
+                        .col-xs-12.col-sm-2
+                            span.txt $173
+                hr
+                .row.total-pay.wow.fadeInUp(data-wow-delay='0.4s')
+                    .col-xs-12.col-sm-7
+                        strong.title coupon
+                        form.form(action='#')
+                            fieldset
+                                input.form-control(type='text', placeholder='Enter promotion code here')
+                                button.btn(type='submit') apply
+                        a.btn-more(href='#')
+                            | Continue 
+                            i.icon-right-arrow
+                    .col-xs-12.col-sm-5
+                        .total-amunt
+                            .holder
+                                strong.heading Subtotal
+                                span.price $403
+                            .holder
+                                strong.heading Tax
+                                span.price $13
+                            .holder
+                                strong.heading total
+                                span.price $390
+                            a.btn-primary(href='#') process to chectout
+    

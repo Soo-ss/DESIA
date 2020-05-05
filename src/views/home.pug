@@ -1,0 +1,592 @@
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-gallery of the Page
+        section.main-slider
+            // social-networks of the page
+            ul.list-unstyled.social-network
+                li.facebook
+                    a.icon-facebook(href='#')
+                li
+                    a.icon-twitter(href='#')
+                li.instagram
+                    a.icon-instagram(href='https://www.instagram.com/desia_changwon/')
+            // Main Slider of the page
+            #main-slider
+                // Slide of the page
+                .slide
+                    .container
+                        .row
+                            .col-xs-12
+                                .beans-slider
+                                    .border
+                                        h1.slider-heading Design Beyond Time
+                                        .img-holder
+                                            //- 440*660
+                                            img(src='/resources/images/main.png', alt='image description')
+                // Slide of the page
+                .slide
+                    .container
+                        .row
+                            .col-xs-12
+                                .beans-slider
+                                    .border
+                                        h1.slider-heading Design Beyond Time
+                                        .img-holder
+                                            img(src='/resources/images/main.png', alt='image description')
+                // Slide of the page
+                .slide
+                    .container
+                        .row
+                            .col-xs-12
+                                .beans-slider
+                                    .border
+                                        h1.slider-heading Design Beyond Time
+                                        .img-holder
+                                            img(src='/resources/images/main.png', alt='image description')
+        // main-banner of the page
+        section.banner.banner-2.wow.fadeInUp(data-wow-delay='0.4s', style='background-image: url(/resources/images/areaHand2.jpg);')
+            span.sale-percent Tel: 055-282-3173
+            .container
+                .row
+                    .col-xs-12
+                        .caption-holder
+                            .text-holder
+                                h1.banner-heading ABOUT US
+                                strong.title A Dreamers Dream
+                                p
+                                    | Pharetra, erat sed fermentum feugiat, velit mauris egestas
+                                    | quam, ut aliquam 
+                                    br
+                                    | massa nisl quis neque. Suspendisse
+                                    |                       in orci enim pharetra, erat sed fermentum 
+                                    br
+                                    | feugiat,
+                                    |                       velit mauris egestas quam ut aliquam massa Suspendisse in
+                                    |                       orci 
+                                    br
+                                    | enim.pharetra, erat sed fermentum feugiat.
+                                a.btn-more(href='about-us.html')
+                                    | Read more 
+                                    i.icon-right-arrow
+                            .img-holder
+                                img(src='/resources/images/dVivoMain.jpeg', alt='image description')
+            span.year TRENDS FOR 2020
+        // product-section of the page
+        section.product-sec.wow.fadeInUp(data-wow-delay='0.4s')
+            .product-holder
+                // product-block of the page
+                .product-block.coll-1
+                    .align-text
+                        span.title featured roducts
+                        h4.product-heading romantic
+                        p
+                            | Pharetra, erat sed fermentum feugiat, velit mauris egestas
+                            br
+                            | quam, ut aliquam massa nisl quis neque.
+                        a.btn-more(href='product-page.html')
+                            | Continue 
+                            i.icon-right-arrow
+                // product-block of the page
+                .product-block.block.coll-2
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                    img.img-responsive(alt='image description', src='/resources/images/dVivoMain.jpeg')
+                // product-block of the page
+                .product-block.block.coll-2
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                    img.img-responsive(alt='image description', src='/resources/images/dVivoCube.jpeg')
+            .product-holder
+                // product-block of the page
+                .product-block.block.coll-1
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                                    //- 960*1235
+                    img.img-responsive(alt='image description', src='/resources/images/dVivo.jpeg')
+                // product-block of the page
+                .product-block.block.coll-1
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                                    //- 960*620
+                    img.img-responsive(alt='image description', src='/resources/images/dVivoSimple.jpeg')
+                // product-block of the page
+                .product-block.block.coll-2
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                    img.img-responsive(alt='image description', src='/resources/images/momento1.jpeg')
+                // product-block of the page
+                .product-block.block.coll-2
+                    .box
+                        a.btn-default(href='product-page.html') shop now 
+                        .over
+                            .holder
+                                .align-left
+                                    strong.title-name Goldtone Bib
+                                    strong.price
+                                        del 150$
+                                        |  120$
+                                a.like(href='#')
+                                    i.icon-favorite
+                                    |                       23
+                    img.img-responsive(alt='image description', src='/resources/images/momento2.jpeg')
+        // blockquote-section of the page
+        section.blockquote-sec.wow.fadeInUp(data-wow-delay='0.4s')
+            ul.list-unstyled.blockquote-slider
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao1.png', alt='image description')
+                                    h2.author-name 여기는
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris
+                                        | egestas quam, ut aliqua m massa nisl quis neque.
+                                        | Suspendisse in orci enim pharetra, erat sed fermentum
+                                        | feugiat, velit mauris egestas quam ut aliquam massa
+                                        | uspendisse .
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao2.png', alt='image description')
+                                    h2.author-name 직원들
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris
+                                        | egestas quam, ut aliqua m massa nisl quis neque.
+                                        | Suspendisse in orci enim pharetra, erat sed fermentum
+                                        | feugiat, velit mauris egestas quam ut aliquam massa
+                                        | uspendisse .
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao3.png', alt='image description')
+                                    h2.author-name 사진 넣으면 좋을듯
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris
+                                        | egestas quam, ut aliqua m massa nisl quis neque.
+                                        | Suspendisse in orci enim pharetra, erat sed fermentum
+                                        | feugiat, velit mauris egestas quam ut aliquam massa
+                                        | uspendisse .
+
+//- block content
+//-     #fullpage.isHome
+//-         .section
+//-             .slide
+//-                 .hero-wrapper
+//-                     .hero
+//-                         img(src="/resources/images/aboutBG_NoChar.png")
+//-                         .heading
+//-                             h2 디자인의 틀을 깨다
+//-                             p DESIA
+//-                             em
+//-                                 | 100% 핸드메이드로 제작되는 웨딩주얼리!
+//-                                 br
+//-                                 | 데시아는 자체 공방과 디자인 연구소를 운영합니다
+//-             .slide.test
+//-                 h1 slide 2
+//-             .slide.test
+//-                 h1 slide 3
+//-     .tweenMax
+    
+//-     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js")
+
+    //- #dot
+    //-     ul
+    //-         li.active
+    //-             a(href='#')
+    //-                 em DESIA
+    //-         li
+    //-             a(href='#')
+    //-                 em 웨딩주얼리
+    //-         li
+    //-             a(href='#')
+    //-                 em Momento
+    //-         li
+    //-             a(href='#')
+    //-                 em D:Vivo
+    //-         li
+    //-             a(href='#')
+    //-                 em HeartBeat
+    //-         li
+    //-             a(href='#')
+    //-                 em 지금 만나보세요
+    //- #wrapper.isHome
+    //-     .section.area1
+    //-         .container
+    //-             .textWrap
+    //-                 h1 DESIA
+    //-                 p Design Beyond Time
+    //-         .animation-area
+    //-             ul.box-area
+    //-                 li
+    //-                 li
+    //-                 li
+    //-                 li
+    //-                 li
+    //-                 li
+    //-     .section.area2
+    //-         .container
+    //-             .textWrap
+    //-                 h2 DIAMOND 전문 예물 브랜드
+    //-                 p 100% 핸드메이드로 제작되는 웨딩주얼리!
+    //-     .section.area3
+    //-         .container
+    //-             .textWrap
+    //-                 h2 Momento
+    //-                 p Design the only diamond
+    //-             .imageWrap
+    //-                 ul
+    //-                     li
+    //-                         img(src="/resources/images/momento1.jpeg")
+    //-     .section.area4
+    //-         .container
+    //-             .textWrap
+    //-                 h2 D:Vivo
+    //-                 p Design the only diamond
+    //-             .imageWrap
+    //-                 ul
+    //-                     li
+    //-                         img(src="/resources/images/dVivo.jpeg")
+    //-     .section.area5
+    //-         .container
+    //-             .textWrap
+    //-                 h2 HeartBeat
+    //-                 p Design the only diamond
+    //-             .imageWrap
+    //-                 ul
+    //-                     li
+    //-                         img(src="/resources/images/heartBeat1.jpeg")
+    //-     .section.area6
+    //-         .container
+    //-             h2 지금 만나보세요!
+    //-             p 여기는 부가설명 여기는 부가설명
+    //-             .footer
+                    
+    //-                 address 경상남도 창원시 성산구 중앙동 67-12 
+    //-                 a(href='#') Copyright © DESIA All Rights Reserved.
+    //-                 p Designed by Sooss
+//- doctype html
+//- html
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+//-         title #{pageTitle} | #{siteName}
+        
+//-         script(src="//code.jquery.com/jquery-latest.min.js")
+
+//-         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+//-         link(rel="stylesheet", href="/static/styles.css")
+
+//-     body
+//-         include ./partials/header
+//-         #dot
+//-             ul
+//-                 li.active
+//-                     a(href='#')
+//-                         em DESIA
+//-                 li
+//-                     a(href='#')
+//-                         em 웨딩주얼리
+//-                 li
+//-                     a(href='#')
+//-                         em Momento
+//-                 li
+//-                     a(href='#')
+//-                         em D:Vivo
+//-                 li
+//-                     a(href='#')
+//-                         em HeartBeat
+//-                 li
+//-                     a(href='#')
+//-                         em 지금 만나보세요
+//-         #wrapper
+//-             .section.area1
+//-                 .container
+//-                     .textWrap
+//-                         h1 DESIA
+//-                         p Design Beyond Time
+//-                 .animation-area
+//-                     ul.box-area
+//-                         li
+//-                         li
+//-                         li
+//-                         li
+//-                         li
+//-                         li
+//-             .section.area2
+//-                 .container
+//-                     .textWrap
+//-                         h2 DIAMOND 전문 예물 브랜드
+//-                         p 100% 핸드메이드로 제작되는 웨딩주얼리!
+//-             .section.area3
+//-                 .container
+//-                     .textWrap
+//-                         h2 Momento
+//-                         p Design the only diamond
+//-                     .imageWrap
+//-                         ul
+//-                             li
+//-                                 img(src="/resources/images/momento1.jpeg")
+//-             .section.area4
+//-                 .container
+//-                     .textWrap
+//-                         h2 D:Vivo
+//-                         p Design the only diamond
+//-                     .imageWrap
+//-                         ul
+//-                             li
+//-                                 img(src="/resources/images/dVivo.jpeg")
+//-             .section.area5
+//-                 .container
+//-                     .textWrap
+//-                         h2 HeartBeat
+//-                         p Design the only diamond
+//-                     .imageWrap
+//-                         ul
+//-                             li
+//-                                 img(src="/resources/images/heartBeat1.jpeg")
+//-             .section.area6
+//-                 .container
+//-                     h2 지금 만나보세요!
+//-                     p 여기는 부가설명 여기는 부가설명
+//-                     .footer
+                        
+//-                         address 경상남도 창원시 성산구 중앙동 67-12 
+//-                         a(href='#') Copyright © DESIA All Rights Reserved.
+//-                         p Designed by Sooss
+
+            //- .section.area7
+            //-     .strips
+            //-         .strip.hoverin +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p 
+            //-                     | Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                     | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                     | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+            //-         .strip
+            //-             .plus +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                 | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                 | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+            //-         .strip
+            //-             .plus +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                 | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                 | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+            //-         .strip
+            //-             .plus +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                 | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                 | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+            //-         .strip
+            //-             .plus +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                 | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                 | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+            //-         .strip
+            //-             .plus +
+            //-             .content
+            //-                 h1 Microdosing Cardigan
+            //-                 p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+            //-                 | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+            //-                 | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+                    
+        script(src="/resources/js/jquery.fullpage.min.js")
+        script(src="/resources/js/full.js")
+        
+//- extends layouts/main
+
+//- block content
+//-     #dot
+//-         ul
+//-             li.active
+//-                 a(href='#')
+//-                     em DESIA
+//-             li
+//-                 a(href='#')
+//-                     em 웨딩주얼리
+//-             li
+//-                 a(href='#')
+//-                     em Momento
+//-             li
+//-                 a(href='#')
+//-                     em D:Vivo
+//-             li
+//-                 a(href='#')
+//-                     em HeartBeat
+//-             li
+//-                 a(href='#')
+//-                     em 지금 만나보세요
+//-     #wrapper   
+//-         .section.area1
+//-             .container
+//-                 .textWrap
+//-                     h1 DESIA
+//-                     p Design Beyond Time
+//-             .animation-area
+//-                 ul.box-area
+//-                     li
+//-                     li
+//-                     li
+//-                     li
+//-                     li
+//-                     li
+//-         .section.area2
+//-             .container
+//-                 .textWrap
+//-                     h2 DIAMOND 전문 예물 브랜드
+//-                     p 100% 핸드메이드로 제작되는 웨딩주얼리!
+//-         .section.area3
+//-             .container
+//-                 .textWrap
+//-                     h2 Momento
+//-                     p Design the only diamond
+//-                 .imageWrap
+//-                     ul
+//-                         li
+//-                             img(src="/resources/images/momento1.jpeg")
+//-         .section.area4
+//-             .container
+//-                 .textWrap
+//-                     h2 D:Vivo
+//-                     p Design the only diamond
+//-                 .imageWrap
+//-                     ul
+//-                         li
+//-                             img(src="/resources/images/dVivo.jpeg")
+//-         .section.area5
+//-             .container
+//-                 .textWrap
+//-                     h2 HeartBeat
+//-                     p Design the only diamond
+//-                 .imageWrap
+//-                     ul
+//-                         li
+//-                             img(src="/resources/images/heartBeat1.jpeg")
+//-         .section.area6
+//-             .container
+//-                 h2 지금 만나보세요!
+//-                 p 여기는 부가설명 여기는 부가설명
+//-                 .footer
+                    
+//-                     address 경상남도 창원시 성산구 중앙동 67-12 
+//-                     a(href='#') Copyright © DESIA All Rights Reserved.
+//-                     p Designed by Soos
+//-         .section.area7
+//-             .strips
+//-                 .strip.hoverin +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p 
+//-                             | Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                             | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                             | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+//-                 .strip
+//-                     .plus +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                         | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                         | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+//-                 .strip
+//-                     .plus +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                         | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                         | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+//-                 .strip
+//-                     .plus +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                         | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                         | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+//-                 .strip
+//-                     .plus +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                         | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                         | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.
+//-                 .strip
+//-                     .plus +
+//-                     .content
+//-                         h1 Microdosing Cardigan
+//-                         p Af portland aesthetic, poutine roof party narwhal iPhone keffiyeh gentrify hammock synth occupy church-key chia. Tbh pinterest affogato, lyft mustache whatever portland synth offal. Actually roof party raw denim yuccie, af fanny pack blue
+//-                         | bottle cold-pressed forage try-hard williamsburg 8-bit sustainable craft beer. Listicle ethical pork belly post-ironic man braid kinfolk. Tumeric beard cornhole, microdosing tacos VHS occupy kogi vinyl biodiesel XOXO pitchfork mixtape
+//-                         | pinterest live-edge. Kombucha tacos cardigan cliche vinyl cold-pressed. Yr schlitz chartreuse raw denim 8-bit, hashtag VHS snackwave bushwick brooklyn raclette aesthetic.

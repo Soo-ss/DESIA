@@ -1,0 +1,106 @@
+//- extends layouts/main
+//- include mixins/myReservationBlock
+
+//- block content
+//-     #userDesc
+//-         .container
+//-             .userDesc
+//-                 h1 안녕하세요
+//-                 if !user.name
+//-                     h2 네이버 이용자
+//-                     p.profileName=user.email
+//-                         | 님!
+//-                 else
+//-                     p.profileName=user.name
+//-                         | 님!
+//-                 em 데시아에 오신 것을 환영합니다!
+
+//-             if loggedUser && user.id === loggedUser.id
+//-                 .userButton
+//-                     //- 네이버 로그인
+//-                     if loggedUser && user.naverID
+//-                         a(href=routes.userDetail(user.id))
+//-                             button.doubleLineButton 나의 예약 목록
+//-                         //- a(href=routes.idontknow)
+//-                         //-     button 회원 탈퇴
+                        
+//-                     //- 관리자이면
+//-                     else if loggedUser && user.isAdmin
+//-                         a(href=`/users${routes.admin}`)
+//-                             button.doubleLineButton 회원 관리
+
+//-                     //- 네이버 로그인 아니면
+//-                     else
+//-                         a(href=routes.userDetail(user.id))
+//-                             button.doubleLineButton 나의 예약 목록
+//-                         a(href=`/users${routes.changePassword}`)
+//-                             button.doubleLineButton 비밀번호 변경하기
+//-                         //- a(href=routes.idontknow)
+//-                         //-     button 회원 탈퇴
+extends layouts/main
+include mixins/myReservationBlock
+
+block content
+    // contain main informative part of the site
+    main#main(role='main')
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/userBG.jpg);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Hello
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') shop
+                                li login
+            span.year TRENDS FOR 2020
+        //- // form-section of the page
+        //- section.form-sec
+        //-     form.contact-form(action='#')
+        //-         fieldset
+        //-             .form-group
+        //-                 input.form-control(type='email', placeholder='Email')
+        //-             .form-group
+        //-                 input.form-control(type='password', placeholder='Password')
+        //-             .form-group
+        //-                 a(href='#') Forget Password
+        //-                 button.btn-primary.btn-login(type='submit') Login
+        section
+            .container
+                .userDesc
+                    h1 안녕하세요
+                    if !user.name
+                        h2 네이버 이용자
+                        p.profileName=user.email
+                            | 님!
+                    else
+                        p.profileName=user.name
+                            | 님!
+                    em 데시아에 오신 것을 환영합니다!
+
+                if loggedUser && user.id === loggedUser.id
+                    .userButton
+                        //- 네이버 로그인
+                        if loggedUser && user.naverID
+                            a(href=routes.userDetail(user.id))
+                                button.doubleLineButton 나의 예약 목록
+                            //- a(href=routes.idontknow)
+                            //-     button 회원 탈퇴
+                            
+                        //- 관리자이면
+                        else if loggedUser && user.isAdmin
+                            a(href=`/users${routes.admin}`)
+                                button.doubleLineButton 회원 관리
+
+                        //- 네이버 로그인 아니면
+                        else
+                            a(href=routes.userDetail(user.id))
+                                button.doubleLineButton 나의 예약 목록
+                            a(href=`/users${routes.changePassword}`)
+                                button.doubleLineButton 비밀번호 변경하기
+                            //- a(href=routes.idontknow)
+                            //-     button 회원 탈퇴

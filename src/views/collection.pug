@@ -1,0 +1,185 @@
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner.wow.fadeInUp(data-wow-delay='0.4s', style='background-image: url(/resources/images/desia1.jpg);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading Collection
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li shop
+            span.year TRENDS FOR 2020
+        // product-section of the page
+        section.product-sec.wow.fadeInUp(data-wow-delay='0.4s')
+            .container
+                .row
+                    .col-xs-12
+                        ul.list-unstyled.filter-list
+                            li.active
+                                a(href='#') all
+                            li
+                                a(href='#', data-filter='.momento') momento
+                            li
+                                a(href='#', data-filter='.dvivo') dvivo
+                            li
+                                a(href='#', data-filter='.heartbeat') heartbeat
+                            li
+                                a(href='#', data-filter='.set') set
+                            //- li
+                            //-     a(href='#', data-filter='.brooches') brooches
+                            //- li
+                            //-     a(href='#', data-filter='.men') men's
+            #masonry-container.holder
+                // product-block of the page
+                .product-block.coll-2.momento.set
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento1.jpeg')
+                // product-block of the page
+                .product-block.coll-2.dvivo.brooches
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento2.jpeg')
+                // product-block of the page
+                .product-block.coll-1.heartbeat.dvivo
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento3.jpeg')
+                // product-block of the page
+                .product-block.coll-1.set
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/graceful.jpg')
+                // product-block of the page
+                .product-block.coll-1.brooches.momento
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='product-page.html')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/dprincess.jpg')
+                // product-block of the page
+                .product-block.coll-2.men
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento3.jpeg')
+                // product-block of the page
+                .product-block.coll-2.dvivo.men
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento4.jpeg')
+                // product-block of the page
+                .product-block.coll-2.heartbeat.dvivo
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento5.jpeg')
+                // product-block of the page
+                .product-block.coll-2.set
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento6.jpeg')
+                // product-block of the page
+                .product-block.coll-2.brooches.set
+                    .over
+                        .align-left
+                            strong.title-name
+                                a(href='product-page.html') Goldtone Bib
+                            strong.price
+                                del 150$
+                                |  120$
+                        a.like(href='#')
+                            i.icon-favorite
+                            |                 23
+                    img.img-responsive(alt='image description', src='/resources/images/momento7.jpeg')
+                // product-block of the page
+                .product-block.coll-2
+                    .pagination-holder
+                        ul.list-unstyled.pagination.text-center
+                            li.slick-prev.slick-arrow
+                                a.icon-left-arrow(href='#')
+                            li
+                                a(href='#') 01
+                            li
+                                a(href='#') 02
+                            li.slick-active
+                                a(href='#') 03
+                            li.slick-prev.slick-arrow
+                                a.icon-right-arrow(href='#')
+                    img.img-responsive(src='../resources/images/img46.jpg', alt='image description')

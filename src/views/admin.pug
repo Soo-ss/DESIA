@@ -1,0 +1,140 @@
+//- extends layouts/main
+//- include mixins/reservationBlock
+
+//- block content
+//-     #adminSummary
+//-         .container
+//-             .adminSummary
+//-                 h1 관리자 페이지
+//-                 p 문자 3개 전송, 이벤트 CRUD
+    
+//-     #userList
+//-         .container
+//-             .userList
+//-                 h1 회원 예약 목록
+//-                 button 이벤트 추가, 수정, 삭제하기
+//-                 table.content-table
+//-                     thead
+//-                         tr
+//-                             th 전화번호
+//-                             th 성함
+//-                             th 예식일
+//-                             th 예약 날짜
+//-                     tbody
+//-                         each item in reservations
+//-                             +reservationBlock({
+//-                                 phone: item.phone,
+//-                                 myName: item.myName,
+//-                                 weddingDate: item.weddingDate,
+//-                                 reservationDate: item.reservationDate
+//-                             })
+                
+extends layouts/main
+include mixins/reservationBlock
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/admin.jpg);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-2 Admin
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') Shop
+                                li Contact
+            span.year TRENDS FOR 2020
+        // shoping-cat-detail of the page
+        a(href='#') 문자 보내기
+        section.shoping-cat-detail
+            .container
+                table.content-table
+                    //- thead
+                    //-     tr
+                    //-         th 전화번호
+                    //-         th 성함
+                    //-         th 예식일
+                    //-         th 예약 날짜
+                    //- tbody
+                    //-     each item in reservations
+                    //-         +reservationBlock({
+                    //-             phone: item.phone,
+                    //-             myName: item.myName,
+                    //-             weddingDate: item.weddingDate,
+                    //-             reservationDate: item.reservationDate
+                    //-         })
+                    thead.row.wow.fadeInUp(data-wow-delay='0.4s')
+                        .col-xs-12.col-sm-2
+                            span.title 전화번호
+                        .col-xs-12.col-sm-3
+                            span.title 성함
+                        .col-xs-12.col-sm-2
+                            span.title 예식일
+                        .col-xs-12.col-sm-3
+                            span.title 예약 날짜
+                        //- .col-xs-12.col-sm-2
+                        //-     span.title total
+                    hr
+                    tbody.row.wow.fadeInUp(data-wow-delay='0.4s')
+                        each item in reservations
+                            +reservationBlock({
+                                phone: item.phone,
+                                myName: item.myName,
+                                weddingDate: item.weddingDate,
+                                reservationDate: item.reservationDate
+                            })
+                    hr
+                    //- .row.wow.fadeInUp(data-wow-delay='0.4s')
+                    //-     .detail-holder
+                    //-         .col-xs-12.col-sm-2
+                    //-             //- .img-holder
+                    //-             //-     img(src='http://placehold.it/165x150', alt='image descripton')
+                    //-             span.txt Kenneth
+                    //-         .col-xs-12.col-sm-3
+                    //-             span.txt Kenneth Jay Lane
+                    //-         .col-xs-12.col-sm-2
+                    //-             span.txt $230
+                    //-         .col-xs-12.col-sm-3
+                    //-             span.qynt 01
+                    //- .row.wow.fadeInUp(data-wow-delay='0.4s')
+                    //-     .detail-holder
+                    //-         .col-xs-12.col-sm-2
+                    //-             .img-holder
+                    //-                 img(src='http://placehold.it/165x150', alt='image descripton')
+                    //-         .col-xs-12.col-sm-3
+                    //-             span.txt Lavin lady
+                    //-         .col-xs-12.col-sm-2
+                    //-             span.txt $173
+                    //-         .col-xs-12.col-sm-3
+                    //-             span.qynt 01
+                    //-         .col-xs-12.col-sm-2
+                    //-             span.txt $173
+                    //- hr
+                    //- .row.total-pay.wow.fadeInUp(data-wow-delay='0.4s')
+                    //-     .col-xs-12.col-sm-7
+                    //-         strong.title coupon
+                    //-         form.form(action='#')
+                    //-             fieldset
+                    //-                 input.form-control(type='text', placeholder='Enter promotion code here')
+                    //-                 button.btn(type='submit') apply
+                    //-         a.btn-more(href='#')
+                    //-             | Continue 
+                    //-             i.icon-right-arrow
+                    //-     .col-xs-12.col-sm-5
+                    //-         .total-amunt
+                    //-             .holder
+                    //-                 strong.heading Subtotal
+                    //-                 span.price $403
+                    //-             .holder
+                    //-                 strong.heading Tax
+                    //-                 span.price $13
+                    //-             .holder
+                    //-                 strong.heading total
+                    //-                 span.price $390
+                    //-             a.btn-primary(href='#') process to chectout

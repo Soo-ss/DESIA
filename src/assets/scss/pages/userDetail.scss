@@ -1,0 +1,127 @@
+// me && userDetail
+
+#userDesc {
+    height: 840px;
+}
+
+.userDesc {
+    padding: 70px 0;
+    color: #000;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+        font-weight: 300;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .profileName {
+        font-size: 30px;
+    }
+
+    em {
+        font-size: 20px;
+    }
+
+    .content-table {
+        text-align: left;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+        thead {
+            tr {
+                background-color: #00122f;
+                color: #fff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            th {
+                font-size: 18px;
+            }
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            font-size: 15px;
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #dddddd;
+
+                &:nth-of-type(even) {
+                    background-color: #f3f3f3;
+                }
+
+                &:last-of-type {
+                    border-bottom: 2px solid #00122f;
+                }
+            }
+        }
+    }
+}
+
+.userButton {
+    text-align: center;
+
+    a {
+        padding-left: 20px;
+    }
+
+    .doubleLineButton {
+        margin-top: 70px;
+        background: #00122f;
+        color: #fff;
+        border: none;
+        position: relative;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0 2em;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+
+        &:hover {
+            background: #fff;
+            color: #00122f;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: #00122f;
+            transition: 400ms ease all;
+        }
+
+        &:after {
+            right: inherit;
+            top: inherit;
+            left: 0;
+            bottom: 0;
+        }
+
+        &:hover:before,
+        &:hover:after {
+            width: 100%;
+            transition: .8s ease all;
+        }
+    }
+}

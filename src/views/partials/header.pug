@@ -1,0 +1,134 @@
+
+header#header.sticky-header
+    .container
+        .row
+            .col-xs-12
+                // logo of the page
+                .logo
+                    a(href=routes.home)
+                        img(src='../../resources/images/logo.png', alt='JEWELRY')
+                .nav-holder
+                    a.nav-opener(href='#')
+                        span menu
+                    // nav of the page
+                    nav#nav
+                        ul.list-unstyled
+                            li.active
+                                a(href=routes.about) About
+                                //- ul.list-unstyled.drop
+                                //-     li
+                                //-         a(href='index.html') Home 1
+                                //-     li
+                                //-         a(href='home.html') Home 2
+                            li.mega-drop
+                                a(href=routes.collection) Collection
+                                //- .drop-holder
+                                //-     .coll
+                                //-         strong.title SHOP PAGE
+                                //-         ul.list-unstyled
+                                //-             li
+                                //-                 a(href='category-page.html') Shop
+                                //-             li
+                                //-                 a(href='shoping-cart.html') Shoping Cart
+                                //-             li
+                                //-                 a(href='shoping-cart.html') Checkout
+                                //-             li
+                                //-                 a(href='login.html') Wishlist
+                                //-             li
+                                //-                 a(href='login.html') Login
+                                //-     .coll
+                                //-         strong.title PRODUCTS
+                                //-         ul.list-unstyled
+                                //-             li
+                                //-                 a(href='#') Basic Products
+                                //-             li
+                                //-                 a(href='#') Simple Products
+                                //-             li
+                                //-                 a(href='#') Varieble Products
+                                //-             li
+                                //-                 a(href='#') Simple Products
+                                //-     .coll.coll-2
+                                //-         strong.title LAST CHANCE
+                                //-         .offer-txt
+                                //-             span.txt sale
+                                //-             span.offer-sale 40%
+                                //-             span.txt-about
+                                //-                 | Pharetra, erat sed 
+                                //-                 br
+                                //-                 | fermentum feugiat, velit
+                                //-                 br
+                                //-                 | mauris egestas quam.
+                                //-             a.btn-more(href='#')
+                                //-                 | Read more 
+                                //-                 i.icon-right-arrow
+                                //-             .img-holder
+                                //-                 img(src='http://placehold.it/150x100', alt='image description')
+                            li
+                                a(href=routes.event) Event
+                                //- ul.list-unstyled.drop
+                                //-     li
+                                //-         a(href='blog.html') Blog
+                                //-     li
+                                //-         a(href='blog-detail.html') Single Post
+                            li
+                                a(href=routes.reviews) Review
+                            
+                            if !loggedUser
+                                li
+                                    a(href=routes.login) Login
+                                li
+                                    a(href=routes.join) Signup
+                            else
+                                li
+                                    a(href=routes.reservation) Contact
+                                //- li
+                                //-     a(href=routes.me) My
+                                li
+                                    a(href=routes.logout) Logout
+
+                    .align-right
+                        // social-networks of the page
+                        ul.list-unstyled.icon-list
+                            if loggedUser
+                                li
+                                    a(href=href=routes.me)
+                                        img(src='../../resources/images/user.png', alt='images description')
+                            //- li.cart-box.hidden-xs
+                            //-     a.cart-opener.opener-icons(href='#')
+                            //-         i.icon-cart
+                            //-         span.cart-num 2
+                            //-     .cart-drop
+                            //-         .cart-holder
+                            //-             strong.main-title
+                            //-                 | You have 
+                            //-                 i 4 items
+                            //-                 |  in your card
+                            //-             ul.cart-list.list-unstyled
+                            //-                 li
+                            //-                     .image
+                            //-                         a(href='#')
+                            //-                             img(alt='Image Description', src='../../resources/images/img02.jpg')
+                            //-                     .description
+                            //-                         span.product-name
+                            //-                             a(href='#') Kenneth Jay Lane
+                            //-                         span.price $230
+                            //-                     a.icon-close(href='#')
+                            //-                 li
+                            //-                     .image
+                            //-                         a(href='#')
+                            //-                             img(alt='Image Description', src='../../resources/images/img02.jpg')
+                            //-                     .description
+                            //-                         span.product-name
+                            //-                             a(href='#') Lavin lady
+                            //-                         span.price $173
+                            //-                     a.icon-close(href='#')
+                            //-             .total-price-area
+                            //-                 span.title-text Total
+                            //-                 span.price $403
+                            //-             span.cart View card
+                            //-             a.btn(href='#') checkout
+                            li
+                                a.btn-search(href='#')
+                                    i.icon-search
+
+

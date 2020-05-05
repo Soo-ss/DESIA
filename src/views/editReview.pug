@@ -1,0 +1,55 @@
+
+//- extends layouts/main
+
+//- block content
+//-     #editReview
+//-         .container
+//-             .editReview
+//-                 h1 후기 수정하기
+//-                 form(action=routes.editReview(review.id), method="post", enctype="multipart/form-data; boundary=<somestring>")
+//-                     dl
+//-                         dt 제목
+//-                         dd
+//-                             input(type="text", placeholder="Title", name="title", value=review.title)
+//-                     dl
+//-                         dt 내용
+//-                         dd
+//-                             textarea(name="description" id="summernote" placeholder="내용")=review.description
+//-                     dl
+//-                         dt 수정하기
+//-                         dd
+//-                             input.completeBtn(type="submit", value="리뷰 수정하기")
+//-                 a(href=routes.deleteReview(review.id))
+//-                     button 리뷰 삭제하기
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Edit Review
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') shop
+                                li login
+            span.year TRENDS FOR 2020
+        // form-section of the page
+        section.form-sec
+            form.contact-form(action='#')
+                fieldset
+                    .form-group
+                        input.form-control(type='email', placeholder='Email')
+                    .form-group
+                        input.form-control(type='password', placeholder='Password')
+                    .form-group
+                        a(href='#') Forget Password
+                        button.btn-primary.btn-login(type='submit') Login

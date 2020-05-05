@@ -1,0 +1,14 @@
+mixin reviewBlock(review = {})
+    .reviewBlock
+        a(id="reviewBlock", href=routes.reviewDetail(review.id))
+            img(src=review.imageFile)
+            p=moment(review.createdAt).format("YYYY-MM-DD")
+            p.reviewTitle=review.title
+            span.reviewViews
+                i(class="fa fa-eye" aria-hidden="true")
+            span.reviewViews=review.views 
+            //- ul
+            //-     li.reviewViews
+            //-         i(class="fa fa-eye" aria-hidden="true") 
+            //-     li.reviewViews=review.views
+            

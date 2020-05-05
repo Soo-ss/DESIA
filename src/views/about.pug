@@ -1,0 +1,184 @@
+//- extends layouts/main
+
+//- block content
+//-     //- include ./partials/header
+//-     #aboutSummary
+//-         .container
+//-             .aboutSummary
+//-                 h1 About us
+//-                 p DESIGN + DIAMOND   
+        
+
+//-     .intro
+//-         h1 주요 특징
+//-         p 데시아만의 차별화된 특징을 알아보세요!
+//-     .gridywrap
+//-         .gridy-2.gridyhe-1
+//-             .gridimg.identity
+//-             .gridinfo
+//-                 h3 Identity.
+//-                 p.gridexerpt
+//-                     | 고객과 함께 공감하며 독창성 있는 디자인을 하고 신뢰할 수 있는 다이아몬드를 판매합니다.
+//-                     br
+//-                     | 또한 저희는 획일화된 다이아몬드를 판매하는것이 아닌 다양한 커팅의 프리미엄 다이아몬드를 제공합니다.
+//-         .gridy-1.gridyhe-1
+//-             .gridimg.designlab
+//-             .gridinfo
+//-                 h3 Designlab.
+//-                 p.gridexerpt "데시아 디자인 연구소"는 디자인실, 캐드출력실, 자체 공방과 검품 시스템을 갖춘 연구소입니다.
+//-         .gridy-1.gridyhe-2
+//-             .gridimg.designer
+//-             .gridinfo
+//-                 h3 Designer.
+//-                 .gridmeta
+//-                     p.gridwhen 데시아 수석 디자이너
+                         
+//-                     p.gridwho 김남희
+                         
+//-                 p.gridexerpt Korea International Jewelry Desing Contest 은상
+//-                 p.gridexerpt The 14th International Jewelry Design Contest 동상
+//-                 p.gridexerpt The 13th International Jewelry Design Contest 우수디자이너상
+//-                 p.gridexerpt The 3th Jewelry Design Awards 장려상
+//-                 p.gridexerpt The 3th Contemporary Jewelry Design Contest 특선
+//-                 p.gridexerpt The 2th Jewelry Design Awards 특선
+//-                 p.gridexerpt The 3th Jewelry Design Awards 입선
+//-                 p.gridexerpt 2013 Gimhae Crafts & Arts Prize 입선
+//-         .gridy-2.gridyhe-1
+//-             .gridimg.communication
+//-             .gridinfo
+//-                 h3 소통과 공감.
+//-                 p.gridexerpt "데시아 디자이너는 고객님과의 소통, 공감을 제일 중요시 생각합니다. 그러므로 고객님과의 소통, 공감은 데시아만의 디자인 개발에 중요한 역할을 합니다.
+//-         .gridy-2.gridyhe-1
+//-             .gridimg.modern
+//-             .gridinfo
+//-                 h3 모던 & 유니크.
+//-                 p.gridexerpt 젊은 디자이너와 고객과의 공감, 소통을 통한 아이디어 스토리텔링으로 인해 데시아만의 유니크한 주얼리 디자인이 완성됩니다.
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.about ABOUT US
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li ABOUT US
+            span.year TRENDS FOR 2020
+        // About Description of the page
+        section.about-dscrp.wow.fadeInUp(data-wow-delay='0.4s')
+            .container
+                .row
+                    .col-xs-12
+                        .img-holder
+                            img(src='/resources/images/momento9.jpeg', alt='image description')
+                        .text-wrap
+                            h1.about-heading ABOUT US
+                            strong.title love jewelry
+                            p
+                                | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat.
+                            ul
+                                li Pharetra, erat sed fermentum feugiat.
+                                li Spendisse in orci enim pharetra, erat sed fermentum.
+                                li Pharetra, erat sed fermentum feugiat.
+                            a.btn-more(href='#')
+                                | Read more 
+                                i.icon-right-arrow
+        // Social Rating of the page
+        section.social-rating.wow.fadeInUp(data-wow-delay='0.4s')
+            .container
+                .row
+                    .col-xs-12.col-sm-4.text-center
+                        h3 SUBSCRIBERS
+                        span.rating
+                            span.counter 198.9
+                            |  k
+                    .col-xs-12.col-sm-4.text-center
+                        h3 INSTAGRAM FOLLOWERS
+                        span.rating
+                            span.counter 201.5
+                            |  k
+                    .col-xs-12.col-sm-4.text-center
+                        h3 PIECES SOLD
+                        span.rating
+                            span.counter 23.741
+                            |  k
+        // team-section of the page
+        section.team-sec.wow.fadeInUp(data-wow-delay='0.4s')
+            .container
+                .row
+                    .col-xs-12
+                        .header.text-center
+                            span.title Our Awesome Team
+                            h3.about-heading MEET OUR TEAM
+                        ul.list-unstyled.team-slider
+                            li
+                                .img-holder
+                                    img(src='/resources/images/designer.jpg', alt='image description')
+                                h4
+                                    a(href='#') Namhee Kim
+                                span.sub-title Jewelry designer
+                            li
+                                .img-holder
+                                    img(src='/resources/images/designer.jpg', alt='image description')
+                                h4
+                                    a(href='#') Namhee Kim
+                                span.sub-title Jewelry designer
+                            li
+                                .img-holder
+                                    img(src='/resources/images/designer.jpg', alt='image description')
+                                h4
+                                    a(href='#') Namhee Kim
+                                span.sub-title Jewelry designer
+                            li
+                                .img-holder
+                                    img(src='/resources/images/designer.jpg', alt='image description')
+                                h4
+                                    a(href='#') Namhee Kim
+                                span.sub-title Jewelry designer
+        // blockquote-section of the page
+        // 135*135
+        section.blockquote-sec.wow.fadeInUp(data-wow-delay='0.4s')
+            ul.list-unstyled.blockquote-slider
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao1.png', alt='image description')
+                                    h2.author-name Press Spaceba
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao2.png', alt='image description')
+                                    h2.author-name Press Spaceba
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .
+                li
+                    .container
+                        .row
+                            .col-xs-12.text-center
+                                // Blockquote Holder of the page
+                                .blockquote-holder
+                                    .author-img
+                                        img(src='/resources/images/kakao3.png', alt='image description')
+                                    h2.author-name Press Spaceba
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliqua m massa nisl quis neque. Suspendisse in orci enim pharetra, erat sed fermentum feugiat, velit mauris egestas quam ut aliquam massa uspendisse .
+
+    

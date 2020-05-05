@@ -1,0 +1,59 @@
+//- extends layouts/main
+
+//- block content
+//-     //- 스마트 에디터 || 썸머노트
+//-     #formContainer
+//-         .container
+//-             .formContainer
+//-                 h1 후기 작성
+//-                 form(action=`/reviews${routes.upload}`, method="post", enctype="multipart/form-data")
+//-                     dl
+//-                         dt
+//-                             label(for="file") 이미지 파일
+//-                         dd
+//-                             input(type="file", id="file", name="imageFile", required = true, accept="image/*")
+//-                     dl
+//-                         dt 제목
+//-                         dd
+//-                             input(type="text", placeholder="제목", name="title", required = true)
+//-                     dl
+//-                         dt 내용
+//-                         dd
+//-                             textarea(name="description" id="summernote" placeholder="내용" required = true)
+//-                     dl
+//-                         dt
+//-                         dd
+//-                             input.completeBtn(type="submit", value="업로드")
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Upload Review
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') shop
+                                li login
+            span.year TRENDS FOR 2020
+        // form-section of the page
+        section.form-sec
+            form.contact-form(action='#')
+                fieldset
+                    .form-group
+                        input.form-control(type='email', placeholder='Email')
+                    .form-group
+                        input.form-control(type='password', placeholder='Password')
+                    .form-group
+                        a(href='#') Forget Password
+                        button.btn-primary.btn-login(type='submit') Login
+    

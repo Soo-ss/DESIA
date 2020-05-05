@@ -1,0 +1,87 @@
+.formContainer {
+    padding: 150px 0;
+    color: #000;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    form {
+        display: table;
+        width: 1000px;
+        margin-top: 50px;
+
+        dl {
+            display: table-row;
+
+            dt {
+                margin-top: 10px;
+                margin-left: 150px;
+                width: 120px;
+                line-height: 56px;
+                text-align: left;
+                font-size: 18px;
+                color: #000;
+                font-weight: 300;
+            }
+
+            dd {
+                display: table-cell;
+                vertical-align: top;
+
+                input {
+                    width: 300px;
+                    margin: 10px;
+                    line-height: 56px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    height: 56px;
+                    border: 1px solid #ccc;
+                    padding: 0 20px;
+
+                    &::placeholder {
+                        color: #ccc;
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+
+                textarea {
+                    color: blue;
+
+                    &::placeholder {
+                        color: blue;
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+
+
+                }
+
+                .completeBtn {
+                    background-color: #000;
+                    color: #fff;
+                    // margin-left: 50px;
+                    cursor: pointer;
+                    // width: 100%;
+                    width: 150px;
+                    border: none;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    font-weight: 300;
+    font-size: 20px;
+}

@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        //- Copyright (c) 2020 by Rob McFadzean (https://codepen.io/breadz/pen/zrMRoo)
+        //- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        //- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        //- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+        meta(name="author" content="desia")
+        meta(name="description" content="데시아에서 다양한 반지를 경험해보세요")
+        meta(name="keywords" content="desia, 데시아, 예물, 데시아 창원, 창원, 예물사이트")
+        meta(name="title" content="desia")
+        meta(name="format-detection" content="telephone=no")
+        title #{pageTitle} | #{siteName}
+        //- <meta property="og:title" content="뮤직 모바일 메인">
+        //- <meta property="og:url" content="https://webstoryboy.github.io/apple">
+        //- <meta property="og:image" content="https://webstoryboy.github.io/apple/assets/icon/icon.jpg">
+        //- <meta property="og:description" content="뮤직 모바일 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+        //- <meta name="twitter:card" content="summary">
+        //- <meta name="twitter:title" content="뮤직 모바일 메인">
+        //- <meta name="twitter:url" content="https://webstoryboy.github.io/apple">
+        //- <meta name="twitter:image" content="https://webstoryboy.github.io/apple/assets/icon/icon.jpg">
+        //- <meta name="twitter:description" content="뮤직 모바일 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+        
+        //- script(src="/resources/js/jquery.fullpage.min.js")
+        
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+        //- link(href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet")
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js")
+        
+        //- link(rel="stylesheet", href="/static/styles.css")
+
+        // include the site stylesheet
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:700', rel='stylesheet', type='text/css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/css/bootstrap.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/css/fonts.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/css/animate.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/css/slick.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/custom.css')
+        // include the site stylesheet
+        link(rel='stylesheet', href='/resources/css/color/color.css')
+
+    body
+        include ../partials/loader
+        #wrapper
+            include ../partials/header
+            include ../partials/search
+            block content
+            include ../partials/footer
+        
+        //- 선언 위치 중요함
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/0.3.6/ScrollTrigger.min.js")
+        //- script(src="/resources/js/full.js")
+        //- script(src="//code.jquery.com/jquery-latest.min.js")
+        script(src="/resources/js/jquery-1.11.3.min.js")
+        script(src="/resources/js/plugins.js")
+        script(src="/resources/js/custom.js")
+        //- script(src="/static/main.js")

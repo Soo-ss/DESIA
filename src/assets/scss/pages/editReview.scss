@@ -1,0 +1,135 @@
+.editReview {
+    padding: 150px 0;
+    color: #000;
+
+    h1 {
+        font-size: 48px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    form {
+        display: table;
+        width: 750px;
+        margin-top: 50px;
+
+        dl {
+            display: table-row;
+
+            dt {
+                margin-top: 10px;
+                margin-left: 350px;
+                width: 120px;
+                line-height: 56px;
+                text-align: left;
+                font-size: 18px;
+                color: #000;
+                font-weight: 300;
+            }
+
+            dd {
+                display: table-cell;
+                vertical-align: top;
+
+                input {
+                    width: 300px;
+                    margin: 10px;
+                    line-height: 56px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    height: 56px;
+                    border: 1px solid #ccc;
+                    padding: 0 20px;
+
+                    &::placeholder {
+                        color: #ccc;
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                }
+
+                .completeBtn {
+                    background-color: #000;
+                    color: #fff;
+                    // margin-left: 50px;
+                    cursor: pointer;
+                    // width: 100%;
+                    width: 150px;
+                    border: none;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 300;
+        border-top: 1px solid #ccc;
+        margin-top: 70px;
+        padding: 40px 0;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 300;
+
+        i {
+            padding-right: 10px;
+            color: #333;
+        }
+    }
+
+    a {
+        button {
+            margin-top: 70px;
+            background: #00122f;
+            color: #fff;
+            border: none;
+            position: relative;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 300;
+            padding: 0 2em;
+            cursor: pointer;
+            transition: 800ms ease all;
+            outline: none;
+
+            &:hover {
+                background: #fff;
+                color: #00122f;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2px;
+                width: 0;
+                background: #00122f;
+                transition: 400ms ease all;
+            }
+
+            &:after {
+                right: inherit;
+                top: inherit;
+                left: 0;
+                bottom: 0;
+            }
+
+            &:hover:before,
+            &:hover:after {
+                width: 100%;
+                transition: .8s ease all;
+            }
+        }
+    }
+}

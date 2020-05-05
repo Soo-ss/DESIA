@@ -1,0 +1,64 @@
+//- doctype html
+//- html
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+//-         title #{pageTitle} | #{siteName}
+
+//-         link(rel="stylesheet", href="/static/styles.css")
+//-         link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+//-     body
+//-         #wrapper
+//-             .imageBox
+//-             .loginBox
+//-                 h1 로그인
+//-                 form(action=routes.login, method="post")
+//-                     p
+//-                         <i class="fa fa-user" aria-hidden="true"></i>
+//-                         input(type="text", name="email", placeholder="아이디", required=true)
+//-                     p
+//-                         <i class="fa fa-lock" aria-hidden="true"></i>
+//-                         input(type="password", name="password", placeholder="비밀번호", required=true)
+//-                     input.loginBtn(type="submit", value="로그인")
+//-                 a(href=routes.naver)
+//-                     input.naverBtn(href=routes.naver, type="button", value="네이버 로그인")
+                    
+//-                 .joinBox
+//-                     h2 아직 회원이 아니신가요?
+//-                     a(href=routes.join)
+//-                         button.doubleLineButton 회원가입
+//-                     a.goHome(href=routes.home) 홈으로가기
+            
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Login
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') Collection
+                                li login
+            span.year TRENDS FOR 2020
+        // form-section of the page
+        section.form-sec
+            form.contact-form(action=routes.login, method="post")
+                fieldset
+                    .form-group
+                        input.form-control(type='email', name="email", placeholder='Email', required=true)
+                    .form-group
+                        input.form-control(type='password', name="password", placeholder='Password', required=true)
+                    .form-group
+                        a(href='#') Forget Password
+                        button.btn-primary.btn-login(type='submit') Login
+    

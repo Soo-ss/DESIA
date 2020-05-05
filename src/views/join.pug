@@ -1,0 +1,72 @@
+//- extends layouts/main
+
+//- block content
+//-     .container
+//-         .joinSection
+//-             h1 회원가입
+//-             form(action=routes.join, method="post")
+//-                 dl
+//-                     dt 아이디
+//-                     dd
+//-                         input(type="email", placeholder="사용 가능한 이메일을 입력해주세요", name="email", required = true)
+//-                 dl
+//-                     dt 이름
+//-                     dd
+//-                         input(type="text", placeholder="(2~10자)", name="name", required = true)
+//-                 dl
+//-                     dt 비밀번호
+//-                     dd
+//-                         input(type="password", name="password", required = true)
+//-                 dl
+//-                     dt 비밀번호 확인
+//-                     dd
+//-                         input(type="password", name="password2", required = true)
+//-                 dl
+//-                     dt
+//-                     dd
+//-                         input.completeBtn(type="submit", value="회원가입")
+
+//-             h2 ※ 주의사항
+//-             p 
+//-                 i(class="fa fa-check", aria-hidden="true")
+//-                 | 입력하신 이메일로 인증 메일이 발송되며,
+//-             p 
+//-                 i(class="fa fa-check", aria-hidden="true")
+//-                 strong 이메일 인증이 완료되면 서비스를 이용하실 수 있습니다.
+                
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Join
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') shop
+                                li Join
+            span.year TRENDS FOR 2020
+        // form-section of the page
+        section.form-sec
+            form.contact-form(action=routes.join, method="post")
+                fieldset
+                    .form-group
+                        input.form-control(type="email", placeholder="사용 가능한 이메일을 입력해주세요", name="email", required = true)
+                    .form-group
+                        input.form-control(type="text", placeholder="(2~10자)", name="name", required = true)
+                    .form-group
+                        input.form-control(type="password", name="password", required = true)
+                    .form-group
+                        input.form-control(type="password", name="password2", required = true)
+                    .form-group
+                        a(href='#') Forget Password
+                        button.btn-primary.btn-login(type='submit') Join
+    

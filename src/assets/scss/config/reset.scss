@@ -1,0 +1,115 @@
+/* 웹폰트 import방식 */
+@charset "UTF-8";
+
+// 구글폰트는 http를 요청하는데 내 사이트는 https를 요청해야해서 이렇게 해준다.
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+// @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+// @font-face {
+// 	font-family: 'Noto Sans KR', sans-serif;
+// 	src: url('./src/resources/fonts/NotoSansCJKkr-Regular.otf');
+// }
+
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+textarea,
+p,
+select,
+button,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+// html {
+// 	background-color: #000;
+// }
+
+/* 폰트 초기화 */
+body,
+input,
+textarea,
+select,
+button,
+table {
+	font-family: 'Noto Sans KR', sans-serif;
+	// font-family: 'NanumSquare', sans-serif;
+
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+	font-style: normal;
+}
+
+/* list-style 초기화 */
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 12px;
+	font-weight: normal;
+	font-weight: 200;
+}
+
+/* a 링크 초기화 */
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* 이미지 초기화  */
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+/* table 초기화 */
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+/* ir 효과 */
+/* 텍스트 지울때 */
+.ir {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}

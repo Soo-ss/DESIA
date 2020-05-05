@@ -1,0 +1,10 @@
+mixin reservationBlock(reservation = {})
+    tr.detail-holder
+        td.col-xs-12.col-sm-2
+            span.txt=reservation.phone
+        td.col-xs-12.col-sm-3
+            span.txt=reservation.myName
+        td.col-xs-12.col-sm-2
+            span.txt=moment(reservation.weddingDate).format("YYYY-MM-DD")
+        td.col-xs-12.col-sm-2
+            span.txt=moment(reservation.reservationDate).format("YYYY-MM-DD, LT")

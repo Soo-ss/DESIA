@@ -1,0 +1,224 @@
+.total {
+    background: #000;
+}
+
+.wrapper {
+    background: #000;
+
+    .intro {
+        height: 1000px;
+        text-align: center;
+        background-image: url(/resources/images/goldwaveFHD.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 180px;
+
+        h1 {
+            font-size: 70px;
+            line-height: 98px;
+            padding: 350px 0 10px 0;
+            color: #fff;
+        }
+
+        p {
+            font-size: 36px;
+            letter-spacing: 0.42em;
+            line-height: 49px;
+            color: #F4DDC4;
+        }
+    }
+
+    .products {
+        text-align: center;
+        height: 200px;
+        background-color: #2e1609;
+
+        h1 {
+            font-size: 50px;
+            line-height: 98px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 36px;
+            letter-spacing: 0.42em;
+            line-height: 49px;
+            color: #F4DDC4;
+        }
+    }
+
+    .gridArea {
+        // background: #000;
+        // width: 90vw;
+        height: 100vh;
+        display: grid;
+        // margin: 5vh auto 8vh auto;
+        // grid-template-rows: repeat(480px, 1fr);
+        // grid-template-columns: repeat(480px, 1fr);
+        // grid-template-rows: 25%;
+        // grid-template-columns: 25%;
+        // grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 480px 160px 480px 160px;
+        grid-template-areas:
+            "box1 box2 box3 box4"
+            "box5 box6 box7 box8"
+            "box9 box10 box11 box12"
+            "box13 box14 box15 box16";
+
+        .gridBox {
+            background: #000;
+            transition: all 250ms;
+            font-size: 2rem;
+            font-family: sans-serif;
+
+            // &:hover {
+            //     box-shadow: 0 0.1rem 2.8rem rgba(0, 0, 0, 0.15), 0 1rem 2rem rgba(0, 0, 0, 0.15);
+            //     transform: translate(0, -0.5rem) scale(1.0);
+            //     // transform: translateY(-3%);
+            // }
+
+            // &:hover h2,
+            // &:hover p {
+            //     opacity: 1;
+            //     transform: none;
+            //     // color: #fff;
+            // }
+
+
+        }
+
+        .textBox {
+            padding-left: 20px;
+
+            h1 {
+                color: #fff;
+                font-size: 48px;
+            }
+
+            p {
+                color: #f4ddc4;
+                font-size: 24px;
+            }
+
+            em {
+                color: #f4ddc4;
+                font-size: 14px;
+            }
+        }
+
+        .item1 {
+            grid-area: box1;
+            animation-delay: 0;
+            background-image: url(/resources/images/momento1.jpeg);
+            background-repeat: no-repeat;
+            background-position: -50px 0;
+        }
+
+        .item2 {
+            grid-area: box2;
+            animation-delay: .1s;
+            background-image: url(/resources/images/momento2.jpeg);
+            background-repeat: no-repeat;
+            background-position: -50px 0;
+        }
+
+        .item3 {
+            grid-area: box3;
+            animation-delay: .2s;
+            background-image: url(/resources/images/momento3.jpeg);
+            background-repeat: no-repeat;
+            background-position: -50px 0;
+        }
+
+        .item4 {
+            grid-area: box4;
+            animation-delay: .2s;
+            background-image: url(/resources/images/momento4.jpeg);
+            background-repeat: no-repeat;
+            background-position: -50px 0;
+        }
+
+        .item5 {
+            grid-area: box5;
+            animation-delay: .4s;
+        }
+
+        .item6 {
+            grid-area: box6;
+            animation-delay: .1s;
+        }
+
+        .item7 {
+            grid-area: box7;
+            animation-delay: .5s;
+        }
+
+        .item8 {
+            grid-area: box8;
+            animation-delay: .1s;
+        }
+
+        .item9 {
+            grid-area: box9;
+            animation-delay: .4s;
+            background-image: url(/resources/images/momento5.jpeg);
+            background-repeat: no-repeat;
+        }
+
+        .item10 {
+            grid-area: box10;
+            animation-delay: .1s;
+            background-image: url(/resources/images/momento6.jpeg);
+            background-repeat: no-repeat;
+        }
+
+        .item11 {
+            grid-area: box11;
+            animation-delay: .5s;
+            background-image: url(/resources/images/momento7.jpeg);
+            background-repeat: no-repeat;
+        }
+
+        .item12 {
+            grid-area: box12;
+            animation-delay: .1s;
+            background-image: url(/resources/images/momento8.jpeg);
+            background-repeat: no-repeat;
+        }
+
+        .item13 {
+            grid-area: box13;
+            animation-delay: .4s;
+        }
+
+        .item14 {
+            grid-area: box14;
+            animation-delay: .1s;
+        }
+
+        .item15 {
+            grid-area: box15;
+            animation-delay: .5s;
+        }
+
+        .item16 {
+            grid-area: box16;
+            animation-delay: .1s;
+        }
+    }
+}
+
+@keyframes fadein {
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

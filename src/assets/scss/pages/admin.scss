@@ -1,0 +1,92 @@
+#adminSummary {
+    height: 600px;
+    background: url(/resources/images/admin.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.adminSummary {
+    padding: 70px 0;
+    color: #000;
+    margin-bottom: 80px;
+
+    h1 {
+        padding-top: 100px;
+        font-size: 50px;
+        font-weight: 500;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 110px;
+            background-color: #000;
+            top: 110px;
+            left: -20px;
+        }
+    }
+
+    p {
+        font-size: 30px;
+        padding-bottom: 30px;
+        font-weight: 300;
+    }
+}
+
+.userList {
+    color: #fff;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+        thead {
+            tr {
+                background-color: #555;
+                color: #fff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            th {
+                font-size: 18px;
+            }
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            font-size: 15px;
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #dddddd;
+
+                &:nth-of-type(even) {
+                    background-color: #333;
+                }
+
+                &:last-of-type {
+                    border-bottom: 2px solid #fff;
+                }
+
+                td {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+}

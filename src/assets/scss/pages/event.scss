@@ -1,0 +1,107 @@
+/* global */
+#eventSummary {
+    height: 700px;
+    background: url(/resources/images/eventBG.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#footer {
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+$textColor: #000;
+
+// eventSummary
+.eventSummary {
+    padding: 70px 0;
+    color: #fff;
+
+    h1 {
+        position: relative;
+        font-size: 50px;
+        padding-top: 100px;
+        font-weight: 500;
+        padding-bottom: 15px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 160px;
+            background-color: #fff;
+            top: 100px;
+            left: -20px;
+        }
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    em {
+        font-size: 20px;
+    }
+}
+
+// eventArea
+.eventArea {
+    color: $textColor;
+
+    .textBox {
+        padding-top: 80px;
+        float: left;
+    }
+
+    .imgBox {
+        float: right;
+        padding-top: 80px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 50px;
+        padding: 100px 0 50px 0;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    em {
+        font-size: 18px;
+    }
+
+    .first {
+        height: 400px;
+        border-top: 2px solid #999;
+
+        .imgBox {
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+    .second,
+    .third,
+    .fourth {
+        height: 400px;
+        border-top: 1px solid #ccc;
+
+        .imgBox {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}

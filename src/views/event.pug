@@ -1,0 +1,141 @@
+//- extends layouts/main
+
+//- block content
+//-     #eventSummary
+//-         .container
+//-             .eventSummary
+//-                 h1 EVENT
+//-                 p 이벤트도 참여해보세요!
+//-                 em 사전예약 고객님들과 이벤트 페이지 스크랩 고객에 한하여 제공해드립니다.
+//-     #eventArea
+//-         .container
+//-             .eventArea
+//-                 h1 진행중인 이벤트
+//-                 .first
+//-                     .textBox
+//-                         h2 2020 Happy New Year!!
+//-                         p "둘만의 특별한 예물반지를 만들어드립니다"
+//-                         em 2020-01-13
+//-                     .imgBox
+//-                         img(src="/resources/images/2020.jpg")
+//-                 .second
+//-                     .textBox
+//-                         h2 리뷰 이벤트
+//-                         p "인스타& 경남결준비 후기작성" 추가 선물 증정
+//-                         em 2020-01-13
+//-                     .imgBox
+//-                         img(src="/resources/images/review.jpg")
+//-                 .third
+//-                     .textBox
+//-                         h2 카카오톡 친구 추가
+//-                         p "현장에서 5%할인"
+//-                         em 2020-01-13
+//-                     .imgBox
+//-                         img(src="/resources/images/plusFriend.jpg")
+//-                 .fourth
+//-                     .textBox
+//-                         h2 커플링 계약시
+//-                         p
+//-                             | "14K 주얼리 증정"
+//-                             br
+//-                             | "티아라 대여 서비스"
+//-                             br
+//-                             | "평생무상 A/S"
+//-                         em 2020-01-13
+//-                     .imgBox
+//-                         img(src="/resources/images/couple.jpg")
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner.wow.fadeInUp(data-wow-delay='0.4s', style='background-image: url(/resources/images/eventBG.jpg);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading Event
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li Blog
+            span.year TRENDS FOR 2020
+        // Blog Slider of the page
+        section.blog-slider
+            .container
+                .row
+                    .col-xs-12
+                        // Post Blog of the page
+                        .post-blog.wow.fadeInUp(data-wow-delay='0.4s')
+                            .holder
+                                .img-holder
+                                    a(href='blog-detail.html')
+                                        img(src='/resources/images/2020.jpg', alt='image description')
+                                .text-wrap
+                                    h2.blog-heading
+                                        a(href='blog-detail.html') 2020 Happy New Year
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque...
+                                    a.btn-more(href='blog-detail.html')
+                                        | Continue 
+                                        i.icon-right-arrow
+                            time.time(datetime='2016-02-03 20:00') FEBRUARY 3, 2016
+                        // Post Blog of the page
+                        .post-blog.align-right.wow.fadeInUp(data-wow-delay='0.4s')
+                            .holder
+                                time.time(datetime='2016-02-03 20:00') FEBRUARY 3, 2016
+                                .text-wrap
+                                    h2.blog-heading
+                                        a(href='blog-detail.html') Review Event
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque...
+                                    a.btn-more(href='blog-detail.html')
+                                        | Continue 
+                                        i.icon-right-arrow
+                                .img-holder
+                                    a(href='blog-detail.html')
+                                        img(src='/resources/images/review.jpg', alt='image description')
+                        // Post Blog of the page
+                        .post-blog.wow.fadeInUp(data-wow-delay='0.4s')
+                            .holder
+                                .img-holder
+                                    a(href='blog-detail.html')
+                                        img(src='/resources/images/plusFriend.jpg', alt='image description')
+                                .text-wrap
+                                    h2.blog-heading
+                                        a(href='blog-detail.html') Kakao Plus Friend
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque...
+                                    a.btn-more(href='blog-detail.html')
+                                        | Continue 
+                                        i.icon-right-arrow
+                            time.time(datetime='2016-02-03 20:00') FEBRUARY 3, 2016
+                        // Post Blog of the page
+                        .post-blog.align-right.wow.fadeInUp(data-wow-delay='0.4s')
+                            .holder
+                                time.time(datetime='2016-02-03 20:00') FEBRUARY 3, 2016
+                                .text-wrap
+                                    h2.blog-heading
+                                        a(href='blog-detail.html') Another event
+                                    p
+                                        | Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque...
+                                    a.btn-more(href='blog-detail.html')
+                                        | Continue 
+                                        i.icon-right-arrow
+                                .img-holder
+                                    a(href='blog-detail.html')
+                                        img(src='/resources/images/reviewBG.jpg', alt='image description')
+            ul.list-unstyled.slick-dots
+                li.prev
+                    a.icon-left-arrow(href='#')
+                li
+                    a(href='#') 01
+                li
+                    a(href='#') 02
+                li.active
+                    a(href='#') 03
+                li.next
+                    a.icon-right-arrow(href='#')

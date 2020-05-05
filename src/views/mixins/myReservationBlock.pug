@@ -1,0 +1,6 @@
+mixin myReservationBlock(myReservation = {})
+    tr
+        td=myReservation.phone
+        td=myReservation.myName
+        td=moment(myReservation.weddingDate).format("YYYY-MM-DD")
+        td=moment(myReservation.reservationDate).format("YYYY-MM-DD, LT")

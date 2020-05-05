@@ -1,0 +1,43 @@
+//- extends layouts/main
+
+//- block content
+//-     #editProfile
+//-         .container
+//-             .editProfile
+//-                 form(action=`/users${routes.editProfile}`, method="post", enctype="multipart/form-data; boundary=<somestring>")
+//-                     input(type="text", placeholder="Name", name="name", value=loggedUser.name)
+//-                     input(type="email", placeholder="Email", name="email", value=loggedUser.email)
+//-                     input(type="submit", value="Update Profile")
+
+extends layouts/main
+
+block content
+    // contain main informative part of the site
+    main#main
+        // main-banner of the page
+        section.banner(style='background-image: url(/resources/images/aboutFHD.png);')
+            span.sale-percent Best of best
+            .container
+                .row
+                    .col-xs-12
+                        .caption
+                            h1.main-heading.heading-1 Edit Profile
+                            ul.list-unstyled.breadcrumbs
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='category-page.html') shop
+                                li login
+            span.year TRENDS FOR 2020
+        // form-section of the page
+        section.form-sec
+            form.contact-form(action='#')
+                fieldset
+                    .form-group
+                        input.form-control(type='email', placeholder='Email')
+                    .form-group
+                        input.form-control(type='password', placeholder='Password')
+                    .form-group
+                        a(href='#') Forget Password
+                        button.btn-primary.btn-login(type='submit') Login
+    
